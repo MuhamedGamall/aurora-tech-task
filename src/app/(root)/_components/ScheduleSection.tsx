@@ -3,7 +3,7 @@ import React from "react";
 const UpcomingSection = ({ title }: { title: string }) => {
   return (
     <div className="w-full ">
-      <h2 className="text-2xl font-medium  text-white mb-2">{title}</h2>
+      <h2 className="max-sm:text-lg text-2xl font-medium  text-white mb-2">{title}</h2>
       <div className="py-7 px-8 shadow-[0px_0px_15px_0px_#00000033] bg-[#484848] flex rounded-xl text-center gap-3 flex-col justify-center">
         <div className="flex max-xs:items-start max-xs:flex-col  xs:gap-3 max-xs:gap-2 bg-[#343434] p-3 rounded-xl">
           <div className="flex max-xs:items-center max-xs:gap-2   items-center  justify-center xs:flex-col ">
@@ -47,7 +47,7 @@ export default function ScheduleSection() {
     <section>
       <div className="flex  gap-10 max-lg:flex-col">
         <div className=" flex-[3] ">
-          <h2 className="text-2xl font-medium text-white mb-3 w-full">
+          <h2 className="max-sm:text-lg text-2xl font-medium text-white mb-3 w-full">
             Schedule
           </h2>
           <div className="w-full h-[430px]  rounded-xl bg-gradient-to-br from-[#343434] to-[#484848] shadow-[0px_0px_15px_0px_#00000033]" />

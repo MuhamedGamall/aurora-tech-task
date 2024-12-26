@@ -17,9 +17,9 @@ export function CardsSlider({ children }: { children: React.ReactNode }) {
         {Array.from({ length: 15 }).map((_, index) => (
           <CarouselItem
             key={index}
-            className="pl-2 md:pl-4 sm:basis-1/2 lg:basis-1/3 lxl:basis-1/4 max-w-[344px]"
+            className="pl-2 md:pl-4 sm:basis-1/2 lg:basis-1/3 xl:basis-1/4 max-w-[344px]"
           >
-            <div className="p-1 ">{children}</div>
+            <div className="p-1  ">{children}</div>
           </CarouselItem>
         ))}
       </CarouselContent>

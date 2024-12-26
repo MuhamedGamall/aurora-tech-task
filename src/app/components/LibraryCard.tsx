@@ -5,7 +5,10 @@ import React from "react";
 
 export default function LibraryCard() {
   return (
-    <div className="shadow-[0px_0px_15px_0px_#00000033] rounded-full">
+    <Link
+      href={"/library"}
+      className="shadow-[0px_0px_15px_0px_#00000033] rounded-full"
+    >
       <Image
         src={"/library.webp"}
         alt="library"
@@ -20,13 +23,10 @@ export default function LibraryCard() {
           </span>
           <span className=" text-sm ">Teacher's Name</span>
         </div>
-        <Link
-          href={"/"}
-          className="min-w-[30px] min-h-[30px] bg-[#D2F473] rounded-full flex items-center justify-center text-[#484848]"
-        >
+        <div className="min-w-[30px] min-h-[30px] bg-[#D2F473] rounded-full flex items-center justify-center text-[#484848]">
           <ChevronRight className="w-6 h-6" />
-        </Link>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 }
