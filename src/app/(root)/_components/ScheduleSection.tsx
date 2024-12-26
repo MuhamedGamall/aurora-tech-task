@@ -50,7 +50,7 @@ export default function ScheduleSection() {
           <h2 className="text-2xl font-medium text-white mb-3 w-full">
             Schedule
           </h2>
-          <div className="w-full h-[430px]  rounded-xl bg-gradient-to-br from-[#4e5364] to-[#232f3a] shadow-[0px_0px_15px_0px_#00000033]" />
+          <div className="w-full h-[430px]  rounded-xl bg-gradient-to-br from-[#343434] to-[#484848] shadow-[0px_0px_15px_0px_#00000033]" />
         </div>
         <div className="flex-[1.2]  flex max-md:flex-col lg:flex-col gap-7">
           <UpcomingSection title="Upcoming Meetings" />
