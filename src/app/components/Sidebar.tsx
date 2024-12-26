@@ -30,16 +30,16 @@ function Sidebar() {
   return (
     <aside
       className={cn(
-        "z-50 transition-all duration-300 ease-in-out fixed top-5 left-5 rounded-[25px] border px-3 border-[#D2F473]  shadow-[0px_0px_15px_0px_#D2F47340]  py-[9px]  h-[82px] md:h-[750px] max-w-[90px] min-w-[90px] bg-[#484848] flex flex-col items-center  justify-start",
+        "z-50 transition-all overflow-hidden duration-300 ease-in-out fixed top-5 left-5 rounded-[25px] border px-3 border-[#D2F473]  shadow-[0px_0px_15px_0px_#D2F47340]  py-[9px]  h-[82px] md:h-[750px] max-w-[90px] min-w-[90px] bg-[#484848] flex flex-col items-center  justify-start",
         {
-          "h-[82px] overflow-hidden": !open && !isMobile,
+          "h-[82px] ": !open && !isMobile,
           " h-[750px]": open && isMobile,
         }
       )}
     >
       <button
         onClick={() => isMobile && setOpen(!open)}
-        className="mb-7 transform transition-transform duration-300"
+        className="mb-7 transform transition-transform duration-300 cursor-default"
       >
         <Image
           src={"/logo.webp"}
